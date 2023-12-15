@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+/* 
+    BG COLOR (LIGHT BG)--       #6D5D6E 
+    BOX / NAV (DARK) --         #393646
+    MAIN TEXT (LIGHT TEXT)--    #F4EEE0
+    SECONDARY TEXT (DARK TEXT)--#4F4557
+*/
+
+
+/* Reset some default styles */
+
+/*body{
+  background-image: url('images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}*/
+html, body {        /*hide scroll*/
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6D5D6E;
+/*    background-image: url("images/bg.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+
+
+
+/* Style the main content area */
+section {
+    padding: 180px;
+    /*  border: 3px solid green; test*/
+}
+
+section .landingContents {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+section h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    /*    text-transform: uppercase;*/
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+section h1 {
+    font-weight: 700;
+    /*    text-transform: uppercase;*/
+    color:  #F4EEE0;
+    font-size: 90px;
+    
+}
+
+section h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color:  #393646;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+
+
+.myButton{  
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition : all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    background-color: #393646;
+    color: rgb(244, 238, 224);
+    border: 2px; 
+}
+.myButton:hover{  
+    background-color: #2A2833;
+    color: #B6ADDB;
+}
+
+
+#landingPic {
+    width: 100px; 
+    height: 115px;
+}

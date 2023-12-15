@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6D5D6E;
+    text-align: center;
+    margin-top: 12%;
+}
+
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    /*    text-transform: uppercase;*/
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    /*    text-transform: uppercase;*/
+    color:  #F4EEE0;
+    font-size: 90px;
+    
+}
+
+h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color:  #393646;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.myButton{  
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition : all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    background-color: #393646;
+    color: rgb(244, 238, 224);
+    border: 2px; 
+}
+.myButton:hover{  
+    background-color: #2A2833;
+    color: #B6ADDB;
+}
+
+#Pic {
+    width: 200px; 
+    height: 175px;
+}

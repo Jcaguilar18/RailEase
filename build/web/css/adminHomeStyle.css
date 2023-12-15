@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #6D5D6E;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0 50px;
+    list-style: none;
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: #393646;
+    overflow: hidden;
+}
+
+/* Style for the left-aligned list items */
+.navbar-left {
+    float: left;
+}
+
+/* Style for the right-aligned list items */
+.navbar-right {
+    float: right;
+    padding-top: 13px;
+}
+
+/* Style for the list items */
+.navbar li {
+    display: inline-block;
+}
+
+/* Style for the list item links */
+.navbar li a {
+    display: block;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* Style for the list item links on hover */
+.navbar-right li a:hover {
+    background-color: #F4EEE0;
+    color: #B6ADDB;
+    border-radius: 10px;
+}
+
+section h1, h2 {
+    padding-left: 60px;
+}
+
+section h1 {
+    font-weight: 600;
+    color:  #F4EEE0;
+    font-size: 65px;
+}
+
+section h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    color:  #393646;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.outsideBox {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #393646;
+    border-radius: 8px;
+}
+
+.outsideBox a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.homeChoices {
+    flex: 1;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #1f2029;
+    color: #c4c3ca;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 300;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+
+
+.homeChoices h3 {
+    padding-top: 20px;
+}
+
+.homeChoices:hover{
+    background: #6D5D6E;
+    border-radius: 12px;
+}
+
+.choicePic {
+    height: 220px;
+    width: 220px;
+}
+
+.logoPic {
+    height: 50px;
+    width: 200x;
+}

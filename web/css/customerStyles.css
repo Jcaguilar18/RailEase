@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+.logoPic {
+    height: 50px;
+    width: 200x;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.landingContents {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 110px 10px 10px 10px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0 50px;
+    list-style: none;
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: #393646;
+    overflow: hidden;
+    max-height: 78px;
+    
+}
+
+/* Style for the left-aligned list items */
+.navbar-left {
+    float: left;
+}
+
+/* Style for the right-aligned list items */
+.navbar-right {
+    float: right;
+    padding-top: 13px;
+}
+
+/* Style for the list items */
+.navbar li {
+    display: inline-block;
+}
+
+/* Style for the list item links */
+.navbar li a {
+    display: block;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* Style for the list item links on hover */
+.navbar-right li a:hover {
+    transition: 300ms background-color linear;
+    background-color: #F4EEE0;
+    color: #B6ADDB;
+    border-radius: 10px;
+}
+
+.logout {
+    background: none;
+    border: none;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.logout:hover {
+    color: #B6ADDB;
+}
+
+body {
+    background-color: #6D5D6E;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: #6D5D6E;
+}
+
+section h1, h2 {
+    padding-left: 60px;
+}
+
+section h1 {
+    font-weight: 600;
+    color:  #F4EEE0;
+    font-size: 65px;
+}
+
+section h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    color:  #393646;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.wrapper, .wrapper2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.wrapper2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.headerBox, .headerBox2 {
+    width: 900px;
+    font-weight: 500;
+    text-align: center;
+}
+.headerBox .chkbox, .headerBox2 .chkbox{
+    display: none;
+}
+
+.headerBox .headerLabl, .headerBox2 .headerLabl {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+    margin: 0;
+    background: #393646 ;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0,0,0,.08);
+    color:#c4c3ca;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px 0;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+/*.headerBox h2:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    backgroud: arrow
+    transition: all 0.3s ease;
+}*/
+
+/*.headerBox input:checked + label:after {
+    transform: rotate(90deg);
+    
+}*/
+
+#arrow {
+   float: right;
+   margin-right: 5px;
+   margin-top: 5px;
+}
+
+.chkbox:checked + .headerLabl #arrow {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.chkbox:not(:checked) + .headerLabl #arrow {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.expandedBox, .expandedBox2 {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 8px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    width: 900px;
+    max-width: 900px;
+}
+
+.headerBox input:checked ~ .expandedBox, .headerBox2 input:checked ~ .expandedBox2{
+    max-height: 75%;
+    padding-bottom: 35px;
+    background: #1f2029 ;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0,0,0,.08);
+    opacity: 1;
+    top:0;
+}
+
+.headerBox input:checked ~ .expandedBox {
+    padding-top: 35px;
+}
+
+
+.headerBox .headerLabl:hover, .headerBox2 .headerLabl:hover{  
+    background: #2A2833;
+    color: rgb(244, 238, 224);
+    border-radius: 8px;
+}
+
+.expandedBox h2, .expandedBox2 h2 {
+    margin-bottom: 15px;
+    padding: 15px 15px 0;
+    color:#c4c3ca;
+    text-transform: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.expandedBox p, .expandedBox2 p  {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+form label {
+  display: inline-block;
+  width: 220px;
+  text-align: left;
+/*  margin-right: 10px;*/
+    padding: 10px 0 15px 0;
+}
+
+form select {
+  display: inline-block;
+  width: 500px;
+}
+
+form label {
+    color:  #F4EEE0;
+}
+
+select{
+    appearance: none;
+    font-family: 'Poppins',sans-serif;
+/*    font-weight: 600;
+    font-size: 20px;*/
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+    cursor: pointer;
+    background-color: #393646;
+    color: #ffffff;
+    border: 6px solid #393646;
+    border-radius: 5px;
+    background-image: url("images/arrow-down.png");
+    background-repeat: no-repeat;
+    background-size: 47px;
+    background-position: 247px 0.5px;
+    outline: none;
+    box-shadow: 0 0 20px rgba(20,20,30,0.25);
+}
+select::-ms-expand{
+    display: none;
+}
+select:hover {
+    border: 4px solid #393646;
+}
+select option{
+    background-color: #393646;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.selected{
+    display: none;
+}
+
+#destLbl {
+    padding-bottom: 50px;
+}
+
+.myButton{  
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition : all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    background-color: #393646;
+    color: rgb(244, 238, 224);
+    border: 2px; 
+}
+
+.myButton:hover{ 
+    background-color: #B6ADDB;
+    color: #393646;
+}
+
+.tableCont {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    min-width: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    text-align: center;
+}
+
+.tableCont thead tr {
+    background-color: #272531;
+    color: #F4EEE0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tableCont tbody tr {
+    background-color: #393646;
+    color: #F4EEE0;
+}
+
+.tableCont th,
+.tableCont td {
+    padding: 12px 15px;
+}
+
+
+.tableCont tbody tr:hover{ 
+    background-color: #B6ADDB;
+    color: #393646;
+    cursor: pointer;
+}
+
+#errorMsg {
+    color: #F4EEE0;
+    font-style: italic;
+}
+
+

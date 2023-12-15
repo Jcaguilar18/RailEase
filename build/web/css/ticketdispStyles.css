@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+body {
+    background-color: #6D5D6E;
+}
+
+
+.container {
+    width: 27em;
+    margin: 3em auto;
+    
+/*    width: 50%;
+    margin: auto;
+    padding: 20px;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.ticket {
+    position: relative;
+    background: linear-gradient(to bottom,
+        #393646 0%,
+        #393646 19%,
+        #F4EEE0 19%,
+        #F4EEE0 100%);
+    margin-top: 100px;
+    padding: 1em;
+    height: 15em;
+    float: left;
+}
+
+.ticket-left {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 16em;
+}
+
+.ticket-right {
+    width: 6.5em;
+    border-left: 0.18em dashed black;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.ticket-right::before, .ticket-right::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.9em;
+    height: 0.9em;
+    background: #FFF;
+    border-radius: 50%;
+    left: -0.5em;
+}
+
+.ticket-right::before {
+    top: -0.4em; 
+    background-color: #6D5D6E;
+}
+
+.ticket-right::after {
+    bottom: -0.4em; 
+    background-color: #6D5D6E;
+}
+
+h1 {
+    font-size: 1.1em;
+    margin-top: 0;
+    color: #F4EEE0;
+}
+
+h1 span{
+    font-weight: normal;
+}
+
+.cusName, .price, .time, .origin, .destination {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.price {
+    padding-bottom: 5px;
+}
+
+.cusName h2, .price h2, .time h2, .origin h2, .destination h2 {
+    font-size: 0.9em;
+    margin: 0;
+    color: #393646
+}
+
+.cusName span, .price span, .time span, .origin span, .destination span {
+    font-size: 0.7em;
+    color:  #6D5D6E;
+}
+
+.cusName  {
+    margin: 2em 0 0 0;
+    padding-bottom: 5px;
+}
+
+.cusName, .origin {
+    margin: 0.7em 0 0 0;
+}
+
+.destination {
+    margin: 0.7em 0 0 1em;
+}
+
+.origin, .destination {
+    float: left; 
+}
+
+/*.eye {
+    position: relative;      
+    width: 2em;
+    height: 1.5em;
+    background: white;
+    margin: 0 auto;
+    border-radius: 1em/0.6em;
+    z-index: 1;
+}
+
+.eye::before, .eye::after {
+    content:"";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.eye::before{
+    width: 1em;
+    background: #393646;
+    height: 1em;
+    z-index: 2;
+    left: 8px;
+    top: 4px;
+}
+
+.eye::after{
+    width: 0.5em;
+    height: 0.5em;
+    background: #393646;
+    z-index: 3;
+    left: 12px;
+    top: 8px;
+}*/
+
+.eye {
+    position: relative;
+    text-align: center;
+    top: -12px;
+}
+
+img {
+    height: 45px;
+    width: 35px;
+}
+
+.number {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.number h3 {
+    color: #393646;
+    margin: 0.3em 0 0 0;
+    font-size: 2.5em;
+}
+
+.number span {
+    display: block;
+    color: #6D5D6E;
+}
+
+.barcode {
+    height: 2em;
+    width: 0;
+    margin: 1.2em 0 0 0.8em;
+    box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 
+        10px 0 0 1px #343434, 11px 0 0 1px #343434, 15px 0 0 1px #343434, 18px 0 0 1px #343434, 
+        22px 0 0 1px #343434, 23px 0 0 1px #343434, 26px 0 0 1px #343434, 
+        30px 0 0 1px #343434, 35px 0 0 1px #343434, 37px 0 0 1px #343434,
+        41px 0 0 1px #343434, 44px 0 0 1px #343434, 47px 0 0 1px #343434, 
+        51px 0 0 1px #343434, 56px 0 0 1px #343434, 59px 0 0 1px #343434,
+        64px 0 0 1px #343434, 68px 0 0 1px #343434, 
+        72px 0 0 1px #343434, 74px 0 0 1px #343434, 77px 0 0 1px #343434,
+        81px 0 0 1px #343434;
+}
+
+.myButton{  
+    border-radius: 8px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition : all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 20px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    background-color: #393646;
+    color: #c4c3ca ;
+    border: 2px; 
+}
+.myButton:hover {  
+    background-color: #F4EEE0;
+    color: #393646;
+    
+}
+
+.buttonCont {
+    margin-top: 50px;
+    text-align: center;
+}
